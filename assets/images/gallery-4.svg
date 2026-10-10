@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-labelledby="title">
+  <title id="title">Ban công xanh mát</title>
+  <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#cbdcc3"/><stop offset="1" stop-color="#f0dfc2"/></linearGradient></defs>
+  <rect width="600" height="600" fill="url(#sky)"/><circle cx="455" cy="105" r="59" fill="#fff0c7" opacity=".85"/>
+  <path d="M0 363h600v237H0z" fill="#bb9065"/>
+  <path d="M0 401h600v19H0z" fill="#76553a"/>
+  <path d="M66 220v202m119-202v202m119-202v202m119-202v202m119-202v202" stroke="#76553a" stroke-width="13"/>
+  <path d="M47 225h511v13H47zm0 82h511v13H47z" fill="#76553a"/>
+  <path d="M62 366h210v17H62z" fill="#704a30"/><path d="M78 383v65m177-65v65" stroke="#704a30" stroke-width="13"/>
+  <path d="M362 338h158v18H362z"/><path d="M376 356v70m130-70v70" stroke="#674832" stroke-width="14"/>
+  <ellipse cx="441" cy="335" rx="93" ry="14" fill="#85603f"/>
+  <path d="M427 318h35v17h-35z" fill="#fff3df"/><path d="M462 322h9a10 10 0 0 1 0 19h-9" fill="none" stroke="#fff3df" stroke-width="7"/>
+  <path d="M98 366c-10-100 17-155 72-162 31 63 7 118-72 162z" fill="#62815a"/>
+  <path d="M101 362c49-46 76-74 89-126" fill="none" stroke="#496444" stroke-width="8"/>
+  <path d="M520 373c-34-80-21-130 24-148 39 48 32 98-24 148z" fill="#718b60"/>
+  <path d="M522 367c12-49 20-82 19-124" fill="none" stroke="#4f6b4d" stroke-width="7"/>
+</svg>

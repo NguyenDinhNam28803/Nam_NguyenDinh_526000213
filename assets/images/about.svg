@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-labelledby="title desc">
+  <title id="title">Góc ngồi cạnh cửa sổ</title>
+  <desc id="desc">Không gian quán với bàn gỗ, ghế êm, cây xanh và nắng bên khung cửa.</desc>
+  <defs><linearGradient id="a" x2="0" y2="1"><stop stop-color="#f7e3c3"/><stop offset="1" stop-color="#c99562"/></linearGradient></defs>
+  <rect width="800" height="600" fill="url(#a)"/>
+  <rect x="455" y="58" width="270" height="340" rx="10" fill="#fbf5e8"/>
+  <rect x="474" y="77" width="232" height="302" fill="#c2d5bb"/>
+  <path d="M474 256h232M588 77v302" stroke="#f7f0df" stroke-width="13"/>
+  <path d="M490 358c38-91 56-98 83-27 23-107 58-99 75 4 18-58 36-68 51-20v64H490z" fill="#63836a"/>
+  <rect y="420" width="800" height="180" fill="#ba8a60"/>
+  <path d="M82 352h248v107H82z" fill="#80604b"/>
+  <path d="M98 332q109-82 216 0v45H98z" fill="#9c7657"/>
+  <path d="M110 457v96m194-96v96" stroke="#563f32" stroke-width="15"/>
+  <path d="M354 412h230v25H354z" fill="#65452f"/>
+  <path d="M376 437v133m187-133v133" stroke="#65452f" stroke-width="14"/>
+  <ellipse cx="463" cy="408" rx="138" ry="17" fill="#986c48"/>
+  <path d="M440 364h47v43h-47z" fill="#f6efe0"/>
+  <path d="M487 373h12a15 15 0 0 1 0 27h-12" fill="none" stroke="#f6efe0" stroke-width="8"/>
+  <path d="M446 376h35v17h-35z" fill="#70462f"/>
+  <path d="M95 430h222" stroke="#c8a27a" stroke-width="8"/>
+  <rect x="40" y="408" width="32" height="38" rx="5" fill="#e7d5b7"/>
+  <path d="M57 408c-8-29 12-35 6-61m7 61c2-24 21-34 18-51" stroke="#41654a" stroke-width="8" fill="none"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-labelledby="title">
+  <title id="title">Sinh tố bơ dừa</title>
+  <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#e9edcf"/><stop offset="1" stop-color="#c4c897"/></linearGradient><linearGradient id="drink" x2="0" y2="1"><stop stop-color="#a9bd70"/><stop offset="1" stop-color="#71834b"/></linearGradient></defs>
+  <rect width="600" height="450" fill="url(#bg)"/><circle cx="95" cy="76" r="52" fill="#fff3d5" opacity=".72"/>
+  <ellipse cx="300" cy="370" rx="163" ry="21" fill="#51603e" opacity=".22"/>
+  <path d="M210 108h180l-20 253a23 23 0 0 1-23 21h-94a23 23 0 0 1-23-21z" fill="#fff8e8" opacity=".82"/>
+  <path d="M221 182h158l-14 169H237z" fill="url(#drink)"/>
+  <path d="M221 182q81-22 158 0v22q-77-15-158 0z" fill="#e8e4c8"/>
+  <path d="M244 152l28-29 29 29-23 30h-27zm72-10 24-27 29 28-20 28h-25z" fill="#fff" opacity=".7"/>
+  <path d="M378 147h31a37 37 0 0 1 0 74h-39" fill="none" stroke="#fff4df" stroke-width="17"/>
+  <path d="M267 230h70m-60 19h57" stroke="#dce4ba" stroke-width="6" opacity=".8"/>
+  <path d="M150 371h296" stroke="#f7f0d9" stroke-width="8" stroke-linecap="round"/>
+  <path d="M440 320c-34-37-27-74 13-93 30 34 26 66-13 93z" fill="#66864e"/>
+  <ellipse cx="448" cy="304" rx="6" ry="20" transform="rotate(35 448 304)" fill="#e6dfb1"/>
+</svg>

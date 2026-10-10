@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-labelledby="title">
+  <title id="title">Matcha latte xanh dịu</title>
+  <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#e9edcf"/><stop offset="1" stop-color="#b8c39a"/></linearGradient><linearGradient id="drink" x2="0" y2="1"><stop stop-color="#bad096"/><stop offset=".6" stop-color="#e9e5c8"/><stop offset="1" stop-color="#8b9d6d"/></linearGradient></defs>
+  <rect width="600" height="450" fill="url(#bg)"/><circle cx="483" cy="82" r="59" fill="#f8f3d4" opacity=".65"/>
+  <ellipse cx="300" cy="372" rx="166" ry="21" fill="#566545" opacity=".22"/>
+  <path d="M204 111h192l-22 248a24 24 0 0 1-24 22h-100a24 24 0 0 1-24-22z" fill="#fffdf0" opacity=".82"/>
+  <path d="M215 187h169l-14 164H232z" fill="url(#drink)"/>
+  <path d="M218 194q75-30 163 0" fill="none" stroke="#82955c" stroke-width="16"/>
+  <path d="M242 167l28-31 29 31-26 28zm76-17 25-27 26 27-22 26h-24z" fill="#fff" opacity=".72"/>
+  <path d="M385 150h26a37 37 0 0 1 0 74h-35" fill="none" stroke="#fff8e8" stroke-width="17"/>
+  <path d="M256 241q44 16 88 0" fill="none" stroke="#f7f3db" stroke-width="7"/>
+  <path d="M160 370h281" stroke="#f8f6e5" stroke-width="8" stroke-linecap="round"/>
+  <path d="M92 332c36-69 60-76 74-12-23 30-48 34-74 12z" fill="#68865f"/>
+</svg>

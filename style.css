@@ -263,6 +263,14 @@ button:focus:not(:focus-visible) { outline: none; }
     gap: var(--spacing-sm);
     text-decoration: none;
 }
+.logo img {
+    width: 44px;
+    height: 44px;
+    flex: 0 0 44px;
+    object-fit: cover;
+    object-position: center 45%;
+    border-radius: 50%;
+}
 .logo span {
     display: flex;
     flex-direction: column;

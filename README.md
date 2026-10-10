@@ -10,17 +10,18 @@ Mở `index.html` bằng trình duyệt. Cần Internet để tải font Poppins
 index.html        Cấu trúc ngữ nghĩa HTML5
 style.css         Tokens (:root), base, components, layout, responsive, reduced-motion
 PROMPT_LOG.md     Nhật ký prompt
+assets/
+  Logo_coffee.jpg Logo hiện có, dùng cho favicon và nhận diện ở header
+  images/         Ảnh minh họa SVG tự tạo cho hero, món nước và không gian quán
 ```
 
 Menu điều hướng luôn hiển thị và tự xuống dòng trên màn hình nhỏ; không cần JavaScript.
 
-`index.html` hiện tham chiếu ảnh và favicon trong `assets/images/` và `assets/icons/`. Hãy thêm các tệp tương ứng vào những thư mục này để hiển thị đầy đủ hình ảnh; hiện các tệp ảnh chưa có trong workspace.
-
-## Thay ảnh thật
-Ảnh hiện là SVG placeholder. Khi có ảnh thật, lưu vào `assets/images/` (WebP, hero dưới 200KB, ảnh card dưới 80KB), rồi đổi đuôi `.svg` thành `.webp` trong `index.html`. Giữ nguyên `width`/`height`. Ghi nguồn và giấy phép ảnh vào mục dưới đây.
+## Hình ảnh
+Các hình minh họa SVG trong `assets/images/` được vẽ riêng cho website bằng hình khối vector, không phụ thuộc nguồn ảnh bên ngoài. Logo dùng tệp `assets/Logo_coffee.jpg` có sẵn trong dự án. Có thể thay hình minh họa bằng ảnh sản phẩm/quán thực tế và cập nhật `src` tương ứng trong `index.html`.
 
 ## Nguồn ảnh
-*(điền khi thay ảnh thật)*
+Hình minh họa SVG: tự tạo cho dự án. Logo: tệp có sẵn `assets/Logo_coffee.jpg`.
 
 ## Dữ liệu mẫu
 Thực đơn, đánh giá khách, địa chỉ, số điện thoại, email và giờ mở cửa đều là dữ liệu mẫu, cần thay bằng thông tin thật.

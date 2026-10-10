@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-labelledby="title">
+  <title id="title">Bàn gỗ cạnh cửa sổ lớn</title>
+  <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#d6e2c9"/><stop offset="1" stop-color="#9eaf8e"/></linearGradient></defs>
+  <rect width="600" height="600" fill="#ead2ad"/><rect x="58" y="55" width="484" height="352" rx="16" fill="#faf2df"/>
+  <rect x="79" y="77" width="442" height="308" fill="url(#sky)"/>
+  <path d="M79 278h442M300 77v308" stroke="#fff4dc" stroke-width="18"/>
+  <path d="M82 367c66-144 107-114 145 0 55-172 113-161 146 0 49-104 92-111 145 0v21H82z" fill="#63815d"/>
+  <rect y="412" width="600" height="188" fill="#c1966a"/>
+  <path d="M95 455h402v27H95z" fill="#704a30"/><path d="M123 482v103m346-103v103" stroke="#704a30" stroke-width="18"/>
+  <path d="M244 431h78v25h-78z" fill="#fff6e5"/>
+  <path d="M322 437h15a14 14 0 0 1 0 28h-15" fill="none" stroke="#fff6e5" stroke-width="9"/>
+  <path d="M253 430h60v9h-60z" fill="#7a4a30"/>
+  <path d="M45 409c28-47 55-43 67 8-29 21-51 18-67-8z" fill="#58724f"/>
+</svg>

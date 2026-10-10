@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-labelledby="title">
+  <title id="title">Cà phê muối kem mịn</title>
+  <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f4dfc0"/><stop offset="1" stop-color="#c99b6d"/></linearGradient><linearGradient id="coffee" x2="0" y2="1"><stop stop-color="#9c623d"/><stop offset="1" stop-color="#40271c"/></linearGradient></defs>
+  <rect width="600" height="450" fill="url(#bg)"/><circle cx="90" cy="70" r="58" fill="#fff3d5" opacity=".65"/>
+  <ellipse cx="300" cy="370" rx="175" ry="25" fill="#805235" opacity=".3"/>
+  <path d="M205 117h190l-22 239a24 24 0 0 1-24 22h-98a24 24 0 0 1-24-22z" fill="#f4eee1" opacity=".88"/>
+  <path d="M216 218h168l-14 136h-141z" fill="url(#coffee)"/>
+  <path d="M212 205q91-30 176 0v34q-85-25-172 0z" fill="#e6c9a4"/>
+  <path d="M216 196q84-55 168 0v25q-81-37-168 0z" fill="#faf3df"/>
+  <path d="M239 195q54-35 107 0" fill="none" stroke="#fff" stroke-width="10" stroke-linecap="round"/>
+  <path d="M390 156h35a38 38 0 0 1 0 76h-42" fill="none" stroke="#fff3df" stroke-width="18"/>
+  <rect x="257" y="268" width="94" height="5" rx="3" fill="#d8aa73" opacity=".8"/>
+  <circle cx="448" cy="310" r="37" fill="#e9a34b"/><circle cx="448" cy="310" r="26" fill="#ffcc6b"/><path d="M448 284v52m-26-26h52" stroke="#f29a3d" stroke-width="4"/>
+  <path d="M108 373h384" stroke="#f5e6ce" stroke-width="9" stroke-linecap="round"/>
+</svg>

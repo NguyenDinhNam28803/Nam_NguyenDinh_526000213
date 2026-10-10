@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-labelledby="title">
+  <title id="title">Tiramisu ly phủ cacao</title>
+  <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f1e1ce"/><stop offset="1" stop-color="#c8a17c"/></linearGradient><linearGradient id="cake" x2="0" y2="1"><stop stop-color="#f3dfbd"/><stop offset=".5" stop-color="#7d4c32"/><stop offset=".52" stop-color="#f0d9b5"/><stop offset="1" stop-color="#70442f"/></linearGradient></defs>
+  <rect width="600" height="450" fill="url(#bg)"/><circle cx="495" cy="77" r="52" fill="#fff2d8" opacity=".72"/>
+  <ellipse cx="301" cy="371" rx="157" ry="22" fill="#61432f" opacity=".24"/>
+  <path d="M218 124h164l-17 227a22 22 0 0 1-22 20h-86a22 22 0 0 1-22-20z" fill="#fff9eb" opacity=".84"/>
+  <path d="M228 180h145l-11 167H239z" fill="url(#cake)"/>
+  <path d="M228 178q74-33 145 0" fill="#5a3929"/>
+  <path d="M248 159c18-23 35-23 53 0 18-23 36-23 54 0" fill="none" stroke="#fff0d8" stroke-width="12" stroke-linecap="round"/>
+  <path d="M370 160h31a36 36 0 0 1 0 72h-39" fill="none" stroke="#fff4e3" stroke-width="16"/>
+  <circle cx="266" cy="213" r="4" fill="#e8c8a1"/><circle cx="322" cy="239" r="4" fill="#e8c8a1"/><circle cx="284" cy="290" r="4" fill="#e8c8a1"/><circle cx="345" cy="317" r="4" fill="#e8c8a1"/>
+  <path d="M160 370h280" stroke="#f7ead8" stroke-width="8" stroke-linecap="round"/>
+  <path d="M113 321h53v7h-53zm8 16h38v6h-38z" fill="#65432d"/>
+</svg>

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc">
+  <title id="title">Quầy cà phê ấm cúng</title>
+  <desc id="desc">Tranh minh họa quầy pha chế với máy espresso, ly cà phê và cửa sổ đầy nắng.</desc>
+  <defs>
+    <linearGradient id="wall" x2="0" y2="1"><stop stop-color="#f8dfbb"/><stop offset="1" stop-color="#e8b984"/></linearGradient>
+    <linearGradient id="counter" x2="0" y2="1"><stop stop-color="#986342"/><stop offset="1" stop-color="#603b29"/></linearGradient>
+    <linearGradient id="glass" x2="0" y2="1"><stop stop-color="#fff9ea"/><stop offset="1" stop-color="#d8a46c"/></linearGradient>
+  </defs>
+  <rect width="1200" height="800" fill="url(#wall)"/>
+  <circle cx="970" cy="155" r="82" fill="#fff2c8" opacity=".8"/>
+  <rect x="760" y="88" width="310" height="390" rx="12" fill="#f6f0dc"/>
+  <rect x="782" y="110" width="266" height="346" fill="#b9d6c0"/>
+  <path d="M782 330h266M915 110v346" stroke="#f7f0df" stroke-width="15"/>
+  <path d="M790 422c34-116 71-54 93-149 29 72 59 65 71 144 35-86 76-96 88-8v47H790z" fill="#66856a"/>
+  <rect y="500" width="1200" height="300" fill="#d8bc98"/>
+  <path d="M0 566h1200v234H0z" fill="url(#counter)"/>
+  <path d="M0 548h1200v34H0z" fill="#bd8a5f"/>
+  <rect x="144" y="300" width="410" height="220" rx="20" fill="#49362c"/>
+  <rect x="168" y="324" width="362" height="142" rx="12" fill="#6a5040"/>
+  <rect x="200" y="348" width="130" height="103" rx="9" fill="#ded0b7"/>
+  <rect x="212" y="361" width="106" height="69" rx="5" fill="#302a25"/>
+  <circle cx="237" cy="395" r="7" fill="#ce6d3a"/><circle cx="293" cy="395" r="7" fill="#ce6d3a"/>
+  <path d="M380 349h112v17H380zM396 368h80v60h-80z" fill="#d6c5a7"/>
+  <path d="M412 428v52m51-52v52" stroke="#d6c5a7" stroke-width="12"/>
+  <path d="M365 478h145v12H365z" fill="#b88b62"/>
+  <rect x="628" y="437" width="116" height="107" rx="12" fill="#f6f1e8"/>
+  <path d="M744 457h20a27 27 0 0 1 0 52h-20" fill="none" stroke="#f6f1e8" stroke-width="13"/>
+  <path d="M643 466h86v53h-86z" fill="url(#glass)"/>
+  <path d="M643 466h86v22h-86z" fill="#7b482e"/>
+  <ellipse cx="686" cy="544" rx="87" ry="12" fill="#c8a27a"/>
+  <path d="M650 424c-14-27 16-30 4-57m39 57c-14-27 16-30 4-57" fill="none" stroke="#fff9ec" stroke-width="7" stroke-linecap="round" opacity=".75"/>
+  <rect x="863" y="523" width="70" height="25" rx="6" fill="#e5d6b8"/>
+  <rect x="879" y="491" width="38" height="35" rx="5" fill="#6b4932"/>
+  <path d="M884 490c10-28 21-28 31 0" fill="#f2dcb4"/>
+  <path d="M103 566v234m110-234v234m850-234v234m110-234v234" stroke="#49362c" stroke-width="9" opacity=".5"/>
+  <rect x="0" y="566" width="1200" height="5" fill="#d0a779"/>
+  <path d="M95 620h64m-64 20h91m720-17h105m-105 22h74" stroke="#c79768" stroke-width="4" opacity=".7"/>
+</svg>

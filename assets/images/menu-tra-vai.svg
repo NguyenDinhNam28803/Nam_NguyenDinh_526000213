@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-labelledby="title">
+  <title id="title">Trà vải hoa hồng</title>
+  <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f6e4e2"/><stop offset="1" stop-color="#d8abb0"/></linearGradient><linearGradient id="tea" x2="0" y2="1"><stop stop-color="#e5baaa"/><stop offset="1" stop-color="#9a5e58"/></linearGradient></defs>
+  <rect width="600" height="450" fill="url(#bg)"/><circle cx="478" cy="79" r="56" fill="#fff3e7" opacity=".7"/>
+  <ellipse cx="300" cy="370" rx="164" ry="21" fill="#69433e" opacity=".22"/>
+  <path d="M207 110h186l-21 251a24 24 0 0 1-24 21h-98a24 24 0 0 1-24-21z" fill="#fff9ee" opacity=".82"/>
+  <path d="M218 183h164l-14 167H235z" fill="url(#tea)"/>
+  <path d="M218 187q80-18 164 0" fill="none" stroke="#f0d1bd" stroke-width="16"/>
+  <path d="M238 154l27-28 28 28-23 29h-26zm75-12 24-26 29 29-20 25h-23z" fill="#fff" opacity=".68"/>
+  <path d="M381 147h29a37 37 0 0 1 0 74h-36" fill="none" stroke="#fff4e9" stroke-width="17"/>
+  <circle cx="446" cy="302" r="27" fill="#fff1da"/><circle cx="446" cy="302" r="20" fill="#e8c38f"/>
+  <path d="M446 276c-20-18-12-38 8-43 15 18 12 33-8 43zm6 3c1-26 20-37 39-27-5 25-19 34-39 27zm-12 5c-26-3-35-22-22-40 23 9 31 23 22 40z" fill="#bb6870"/>
+  <path d="M159 370h283" stroke="#fff2e5" stroke-width="8" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-labelledby="title">
+  <title id="title">Trà đào cam sả</title>
+  <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f5dfc4"/><stop offset="1" stop-color="#e8b18d"/></linearGradient><linearGradient id="tea" x2="0" y2="1"><stop stop-color="#f0b764"/><stop offset="1" stop-color="#b65636"/></linearGradient></defs>
+  <rect width="600" height="450" fill="url(#bg)"/><circle cx="104" cy="75" r="48" fill="#fff2d9" opacity=".8"/>
+  <ellipse cx="301" cy="372" rx="161" ry="22" fill="#79402c" opacity=".22"/>
+  <path d="M210 111h180l-20 249a23 23 0 0 1-23 21h-94a23 23 0 0 1-23-21z" fill="#fff8e7" opacity=".83"/>
+  <path d="M221 188h158l-13 162H237z" fill="url(#tea)"/>
+  <path d="M221 188h158v22H221z" fill="#f7d288"/>
+  <path d="M240 152l27-29 30 30-25 32h-26zm74-8 26-26 29 31-21 26h-25z" fill="#fff" opacity=".7"/>
+  <path d="M378 147h30a37 37 0 0 1 0 74h-38" fill="none" stroke="#fff4df" stroke-width="17"/>
+  <path d="M177 330c-24-9-27-32-7-49 18 13 21 30 7 49zm47-27c-8-25 5-42 31-43 2 23-9 37-31 43z" fill="#64815b"/>
+  <circle cx="435" cy="300" r="40" fill="#ec8942"/><circle cx="435" cy="300" r="28" fill="#ffc16c"/>
+  <path d="M435 274v52m-26-26h52" stroke="#f09b50" stroke-width="4"/>
+  <path d="M155 371h286" stroke="#f9ebd9" stroke-width="8" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 450" role="img" aria-labelledby="title">
+  <title id="title">Bạc xỉu đá nhiều sữa</title>
+  <defs><linearGradient id="bg" x2="0" y2="1"><stop stop-color="#f5e8d4"/><stop offset="1" stop-color="#d3aa7c"/></linearGradient><linearGradient id="drink" x2="0" y2="1"><stop stop-color="#d8b68c"/><stop offset=".55" stop-color="#f4e2c7"/><stop offset="1" stop-color="#b87a4b"/></linearGradient></defs>
+  <rect width="600" height="450" fill="url(#bg)"/><circle cx="490" cy="72" r="45" fill="#fff7df" opacity=".75"/>
+  <ellipse cx="300" cy="371" rx="160" ry="23" fill="#73523a" opacity=".24"/>
+  <path d="M215 112h170l-19 244a25 25 0 0 1-25 22h-82a25 25 0 0 1-25-22z" fill="#fff9ec" opacity=".85"/>
+  <path d="M225 195h150l-12 155H238z" fill="url(#drink)"/>
+  <path d="M225 211q72-23 150 1" fill="none" stroke="#825033" stroke-width="19"/>
+  <path d="M236 177l26-24 27 28-26 25zm70-20 25-22 26 27-24 23z" fill="#fff" opacity=".8"/>
+  <path d="M367 154h32a38 38 0 0 1 0 76h-39" fill="none" stroke="#fff7e8" stroke-width="17"/>
+  <path d="M270 255h80" stroke="#fff4df" stroke-width="7" opacity=".8"/>
+  <path d="M154 371h294" stroke="#f8ebd5" stroke-width="8" stroke-linecap="round"/>
+  <path d="M126 284c31-22 58-22 81 0-23 26-51 28-81 0z" fill="#688263"/>
+</svg>

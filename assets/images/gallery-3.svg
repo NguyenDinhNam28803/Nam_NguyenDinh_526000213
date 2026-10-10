@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" role="img" aria-labelledby="title">
+  <title id="title">Khu ghế sofa tầng lửng</title>
+  <rect width="600" height="600" fill="#ead3b4"/><path d="M0 0h600v302H0z" fill="#f1dfc4"/>
+  <path d="M60 70h480v232H60z" fill="#c9a47e"/>
+  <path d="M83 95h434v187H83z" fill="#d9c3a2"/>
+  <path d="M104 126h390v129H104z" fill="#f3e7d3"/>
+  <path d="M0 342h600v258H0z" fill="#b88c61"/>
+  <path d="M74 365h452v112q0 28-28 28H102q-28 0-28-28z" fill="#80604c"/>
+  <path d="M96 345h408q22 0 22 22v52H74v-52q0-22 22-22z" fill="#96745b"/>
+  <path d="M104 399h392v71H104z" fill="#a58468"/>
+  <path d="M123 496v75m354-75v75" stroke="#614633" stroke-width="20"/>
+  <rect x="202" y="512" width="196" height="17" rx="8" fill="#603f2b"/>
+  <path d="M223 512v63m155-63v63" stroke="#603f2b" stroke-width="12"/>
+  <path d="M44 333v-94m0 20c-28-8-34-28-20-49 25 8 32 26 20 49zm1-10c4-27 23-39 46-29-7 24-22 35-46 29z" fill="#66815d"/>
+  <ellipse cx="67" cy="344" rx="39" ry="11" fill="#765137"/>
+</svg>
