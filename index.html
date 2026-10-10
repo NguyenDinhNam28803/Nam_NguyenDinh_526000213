@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Phước Coffee &amp; Tea – Cà phê và trà cho ngày mới</title>
+  <meta name="description" content="Phước Coffee &amp; Tea: quán cà phê và trà phong cách hiện đại, không gian trẻ trung, thực đơn đa dạng.">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Bỏ qua, đến nội dung chính</a>
+
+  <!-- ========== HEADER ========== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="#home" aria-label="Phước Coffee &amp; Tea – về đầu trang">
+        <img src="assets/icons/favicon.svg" alt="" width="36" height="36">
+        <span>Phước <small>Coffee &amp; Tea</small></span>
+      </a>
+
+      <nav id="primary-nav" class="site-nav" aria-label="Điều hướng chính">
+        <ul class="nav-list">
+          <li><a href="#home">Trang chủ</a></li>
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#menu">Thực đơn</a></li>
+          <li><a href="#gallery">Không gian</a></li>
+          <li><a href="#reviews">Đánh giá</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ========== MAIN ========== -->
+  <main id="main">
+
+    <!-- Hero -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <h1 id="hero-title" class="hero-title">Một ly ngon, một ngày nhẹ nhàng hơn</h1>
+          <p class="hero-tagline">Cà phê rang vừa, trà trái cây tươi và góc ngồi đủ chill để bạn ở lại lâu hơn dự định.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#menu">Xem thực đơn</a>
+            <a class="btn btn-outline" href="#contact">Tìm đường đến quán</a>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <img src="assets/images/hero.svg" alt="Quầy pha chế và ly cà phê tại Phước Coffee &amp; Tea" width="1200" height="800">
+        </figure>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section about" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <figure class="about-media">
+          <img src="assets/images/about.svg" alt="Không gian bên trong quán với bàn gỗ và ánh sáng tự nhiên" width="800" height="600" loading="lazy">
+          <figcaption class="visually-hidden">Góc ngồi gần cửa sổ của quán</figcaption>
+        </figure>
+        <div class="about-content">
+          <h2 id="about-title" class="section-title">Câu chuyện của Phước</h2>
+          <p>Phước Coffee &amp; Tea bắt đầu từ một xe cà phê nhỏ và mong muốn đơn giản: pha ly nước đủ ngon để người ta muốn quay lại. Giờ đây quán là chỗ hẹn của sinh viên, dân văn phòng và cả những ai chỉ cần một buổi chiều yên tĩnh.</p>
+          <ul class="highlights">
+            <li class="highlight">
+              <h3>Hạt cà phê chọn lọc</h3>
+              <p>Rang vừa, ít chua, dễ uống.</p>
+            </li>
+            <li class="highlight">
+              <h3>Trà và trái cây tươi</h3>
+              <p>Nấu mỗi ngày, không dùng syrup công nghiệp.</p>
+            </li>
+            <li class="highlight">
+              <h3>Không gian thoải mái</h3>
+              <p>Wi-Fi mạnh, ổ cắm ở mọi bàn.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section id="menu" class="section menu" aria-labelledby="menu-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="menu-title" class="section-title">Thực đơn nổi bật</h2>
+          <p class="section-lead">Tám món được gọi nhiều nhất tại quán. Giá đã bao gồm VAT.</p>
+        </header>
+
+        <div class="menu-grid">
+          <div class="menu-item">
+            <article class="card menu-card">
+              <div class="card-media">
+                <img src="assets/images/menu-ca-phe-muoi.svg" alt="Ly cà phê muối với lớp kem muối béo mặn" width="600" height="450" loading="lazy">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Cà phê muối</h3>
+                <p class="card-desc">Espresso, sữa và lớp kem muối béo mịn.</p>
+                <p class="card-price">35.000đ</p>
+                <a class="card-link" href="#contact">Ghé quán thử<span class="visually-hidden"> Cà phê muối</span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="menu-item">
+            <article class="card menu-card">
+              <div class="card-media">
+                <img src="assets/images/menu-bac-xiu.svg" alt="Ly bạc xỉu đá nhiều sữa" width="600" height="450" loading="lazy">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Bạc xỉu đá</h3>
+                <p class="card-desc">Nhiều sữa, ít cà phê, ngọt dịu cho người mới uống.</p>
+                <p class="card-price">32.000đ</p>
+                <a class="card-link" href="#contact">Ghé quán thử<span class="visually-hidden"> Bạc xỉu đá</span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="menu-item">
+            <article class="card menu-card">
+              <div class="card-media">
+                <img src="assets/images/menu-cold-brew.svg" alt="Ly cold brew cam vàng có lát cam" width="600" height="450" loading="lazy">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Cold brew cam vàng</h3>
+                <p class="card-desc">Cà phê ủ lạnh 18 giờ, nước cam vắt, vị chua nhẹ.</p>
+                <p class="card-price">45.000đ</p>
+                <a class="card-link" href="#contact">Ghé quán thử<span class="visually-hidden"> Cold brew cam vàng</span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="menu-item">
+            <article class="card menu-card">
+              <div class="card-media">
+                <img src="assets/images/menu-matcha-latte.svg" alt="Ly matcha latte màu xanh nhạt" width="600" height="450" loading="lazy">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Matcha latte</h3>
+                <p class="card-desc">Matcha Nhật xay mịn, sữa tươi, đá viên.</p>
+                <p class="card-price">49.000đ</p>
+                <a class="card-link" href="#contact">Ghé quán thử<span class="visually-hidden"> Matcha latte</span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="menu-item">
+            <article class="card menu-card">
+              <div class="card-media">
+                <img src="assets/images/menu-tra-dao.svg" alt="Ly trà đào cam sả với miếng đào ngâm" width="600" height="450" loading="lazy">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Trà đào cam sả</h3>
+                <p class="card-desc">Trà đen, đào ngâm, cam tươi và sả đập dập.</p>
+                <p class="card-price">42.000đ</p>
+                <a class="card-link" href="#contact">Ghé quán thử<span class="visually-hidden"> Trà đào cam sả</span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="menu-item">
+            <article class="card menu-card">
+              <div class="card-media">
+                <img src="assets/images/menu-tra-vai.svg" alt="Ly trà vải hoa hồng với vải nguyên trái" width="600" height="450" loading="lazy">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Trà vải hoa hồng</h3>
+                <p class="card-desc">Trà lài, vải ngâm, cánh hoa hồng sấy.</p>
+                <p class="card-price">42.000đ</p>
+                <a class="card-link" href="#contact">Ghé quán thử<span class="visually-hidden"> Trà vải hoa hồng</span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="menu-item">
+            <article class="card menu-card">
+              <div class="card-media">
+                <img src="assets/images/menu-sinh-to-bo.svg" alt="Ly sinh tố bơ dừa màu xanh béo" width="600" height="450" loading="lazy">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Sinh tố bơ dừa</h3>
+                <p class="card-desc">Bơ sáp xay cùng nước cốt dừa, thêm cơm dừa non.</p>
+                <p class="card-price">49.000đ</p>
+                <a class="card-link" href="#contact">Ghé quán thử<span class="visually-hidden"> Sinh tố bơ dừa</span></a>
+              </div>
+            </article>
+          </div>
+
+          <div class="menu-item">
+            <article class="card menu-card">
+              <div class="card-media">
+                <img src="assets/images/menu-tiramisu.svg" alt="Ly tiramisu rắc bột cacao" width="600" height="450" loading="lazy">
+              </div>
+              <div class="card-body">
+                <h3 class="card-title">Tiramisu ly</h3>
+                <p class="card-desc">Bánh mềm thấm cà phê, kem phô mai, phủ cacao.</p>
+                <p class="card-price">39.000đ</p>
+                <a class="card-link" href="#contact">Ghé quán thử<span class="visually-hidden"> Tiramisu ly</span></a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="section gallery" aria-labelledby="gallery-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="gallery-title" class="section-title">Không gian quán</h2>
+          <p class="section-lead">Tầng trệt thoáng, tầng lửng yên tĩnh, ban công cho buổi chiều.</p>
+        </header>
+
+        <div class="gallery-grid">
+          <figure class="gallery-item">
+            <img src="assets/images/gallery-1.svg" alt="Quầy bar và máy pha cà phê" width="600" height="600" loading="lazy">
+            <figcaption>Quầy bar</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/images/gallery-2.svg" alt="Dãy bàn gỗ cạnh cửa sổ lớn" width="600" height="600" loading="lazy">
+            <figcaption>Góc cửa sổ</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/images/gallery-3.svg" alt="Khu ghế sofa tầng lửng" width="600" height="600" loading="lazy">
+            <figcaption>Tầng lửng</figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <img src="assets/images/gallery-4.svg" alt="Ban công với cây xanh và bàn nhỏ" width="600" height="600" loading="lazy">
+            <figcaption>Ban công</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="section reviews" aria-labelledby="reviews-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="reviews-title" class="section-title">Khách nói gì về Phước</h2>
+        </header>
+
+        <div class="reviews-grid">
+          <article class="review">
+            <blockquote>
+              <p>Cà phê muối ở đây không bị gắt, uống hết ly vẫn thấy dễ chịu. Bàn nào cũng có ổ cắm nên mình ngồi làm bài cả buổi.</p>
+            </blockquote>
+            <footer class="review-author"><strong>Minh Anh</strong>, sinh viên</footer>
+          </article>
+          <article class="review">
+            <blockquote>
+              <p>Trà đào cam sả thơm thật sự, có miếng đào chứ không phải siro. Nhân viên nhớ món quen của mình sau hai lần ghé.</p>
+            </blockquote>
+            <footer class="review-author"><strong>Quốc Bảo</strong>, nhân viên văn phòng</footer>
+          </article>
+          <article class="review">
+            <blockquote>
+              <p>Ban công buổi chiều rất đẹp. Mình hay hẹn bạn ở đây vì không ồn và đồ uống ra nhanh.</p>
+            </blockquote>
+            <footer class="review-author"><strong>Thu Hà</strong>, designer tự do</footer>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section contact" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <h2 id="contact-title" class="section-title">Ghé quán</h2>
+          <address>
+            <p><strong>Địa chỉ:</strong> 123 Đường Mẫu, Phường Mẫu, TP. Mẫu</p>
+            <p><strong>Điện thoại:</strong> <a href="tel:0900000000">0900 000 000</a></p>
+            <p><strong>Email:</strong> <a href="mailto:hello@phuoccoffee.example">hello@phuoccoffee.example</a></p>
+          </address>
+          <h3>Giờ mở cửa</h3>
+          <ul class="hours">
+            <li><span>Thứ Hai – Thứ Sáu</span> <span>07:00 – 22:00</span></li>
+            <li><span>Thứ Bảy – Chủ Nhật</span> <span>07:30 – 23:00</span></li>
+          </ul>
+          <a class="btn btn-primary" href="https://maps.google.com" target="_blank" rel="noopener">Chỉ đường</a>
+        </div>
+        <div class="contact-map" role="img" aria-label="Khu vực bản đồ, sẽ nhúng Google Maps sau">
+          <p>Bản đồ (nhúng sau)</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <section aria-labelledby="footer-brand">
+        <h2 id="footer-brand" class="footer-title">Phước Coffee &amp; Tea</h2>
+        <p>Cà phê và trà cho ngày mới.</p>
+      </section>
+      <section aria-labelledby="footer-links">
+        <h2 id="footer-links" class="footer-title">Liên kết nhanh</h2>
+        <ul>
+          <li><a href="#about">Giới thiệu</a></li>
+          <li><a href="#menu">Thực đơn</a></li>
+          <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+      </section>
+      <section aria-labelledby="footer-social">
+        <h2 id="footer-social" class="footer-title">Mạng xã hội</h2>
+        <ul>
+          <li><a href="#" rel="noopener">Facebook</a></li>
+          <li><a href="#" rel="noopener">Instagram</a></li>
+          <li><a href="#" rel="noopener">TikTok</a></li>
+        </ul>
+      </section>
+    </div>
+    <p class="copyright">&copy; <span id="year">2026</span> Phước Coffee &amp; Tea. Dữ liệu trên trang là dữ liệu mẫu.</p>
+  </footer>
+</body>
+</html>

@@ -1,4 +1,11 @@
+/* ==========================================================
+   Phước Coffee & Tea – style.css
+   Bước 1–2: khung. Các khối layout/component sẽ thêm ở Bước 3–7.
+   ========================================================== */
+
+/* 1. TOKENS ------------------------------------------------ */
 :root {
+    /* Bộ token gốc (theo đề bài, giữ nguyên) */
     --primary-color: #6F4E37;
     --secondary-color: #C8A27A;
     --background-color: #FAF7F2;
@@ -18,4 +25,578 @@
     --radius-lg: 20px;
 
     --transition-normal: 0.3s ease;
+
+    /* Token bổ sung (derived) */
+    --container-width: 1140px;
+    --shadow-sm: 0 2px 8px rgba(41, 37, 34, 0.08);
+    --shadow-md: 0 8px 24px rgba(41, 37, 34, 0.12);
+    --header-height: 72px;
+    --fs-hero: clamp(2.25rem, 5vw + 1rem, 4rem);
+    --fs-h2: clamp(1.75rem, 2.5vw + 1rem, 2.5rem);
+    --primary-dark: #5A3E2B;      /* trạng thái hover của nút chính */
+    --radius-pill: 999px;
+
+}
+
+/* 2. RESET & BASE ------------------------------------------ */
+*, *::before, *::after { box-sizing: border-box; }
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: var(--header-height);
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+}
+
+img { max-width: 100%; height: auto; display: block; }
+
+/* Keep decorative transitions from introducing horizontal overflow. */
+main { overflow-x: clip; }
+
+/* Focus: khai báo :focus làm mức nền, rồi ẩn đi khi không phải điều hướng bằng bàn phím.
+   Vòng focus dùng --primary-color (tương phản ~7:1 với nền) thay vì --secondary-color (~2.3:1). */
+a:focus,
+button:focus {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 3px;
+}
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible) { outline: none; }
+
+/* 3. UTILITIES --------------------------------------------- */
+.container {
+    width: min(100% - 2 * var(--spacing-md), var(--container-width));
+    margin-inline: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px; height: 1px;
+    margin: -1px; padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+.skip-link {
+    position: absolute;
+    left: var(--spacing-md);
+    top: -100px;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background: var(--primary-color);
+    color: var(--surface-color);
+    border-radius: var(--radius-md);
+    z-index: 1000;
+}
+.skip-link:focus { top: var(--spacing-md); }
+
+/* 4. COMPONENTS ------------------------------------------- */
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: var(--spacing-md) var(--spacing-lg);
+    border: 2px solid transparent;
+    border-radius: var(--radius-pill);
+    font: inherit;
+    font-weight: 600;
+    line-height: 1.2;
+    text-decoration: none;
+    cursor: pointer;
+    transition:
+        background-color var(--transition-normal),
+        color var(--transition-normal),
+        border-color var(--transition-normal),
+        box-shadow var(--transition-normal),
+        translate var(--transition-normal);
+}
+.btn:hover,
+.btn:focus-visible {
+    translate: 0 -2px;
+    box-shadow: var(--shadow-md);
+}
+.btn:active {
+    translate: 0 0;
+    box-shadow: var(--shadow-sm);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--surface-color);
+}
+.btn-primary:hover,
+.btn-primary:focus-visible {
+    background-color: var(--primary-dark);
+}
+
+.btn-outline {
+    background-color: transparent;
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+.btn-outline:hover,
+.btn-outline:focus-visible {
+    background-color: var(--primary-color);
+    color: var(--surface-color);
+}
+
+/* Cards */
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--surface-color);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
+    overflow: hidden;
+    transition:
+        translate var(--transition-normal),
+        box-shadow var(--transition-normal);
+}
+.card:hover,
+.card:focus-within {
+    translate: 0 calc(-1 * var(--spacing-sm));
+    box-shadow: var(--shadow-md);
+}
+
+.card-media {
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+}
+.card-media img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+}
+.card:hover .card-media img,
+.card:focus-within .card-media img {
+    transform: scale(1.06);
+}
+
+.card-body {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+    padding: var(--spacing-md);
+}
+.card-title {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.card-desc {
+    flex: 1;
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--muted-color);
+}
+.card-price {
+    margin: 0;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+.card-link {
+    align-self: flex-start;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-decoration: underline;
+    text-decoration-color: var(--secondary-color);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+    transition: color var(--transition-normal), text-decoration-color var(--transition-normal);
+}
+.card-link:hover,
+.card-link:focus-visible {
+    color: var(--primary-dark);
+    text-decoration-color: var(--primary-color);
+}
+
+/* 5. SECTIONS (mobile-first) ------------------------------- */
+
+/* Section chung */
+.section { padding-block: var(--spacing-xl); }
+.section-header {
+    max-width: 60ch;
+    margin-bottom: var(--spacing-lg);
+}
+.section-title {
+    margin: 0 0 var(--spacing-md);
+    font-size: var(--fs-h2);
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--primary-color);
+}
+.section-lead { margin: 0; }
+
+/* Header and navigation */
+.site-header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background-color: var(--surface-color);
+    box-shadow: var(--shadow-sm);
+}
+.header-inner {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: var(--spacing-md);
+    min-height: var(--header-height);
+    padding-block: var(--spacing-sm);
+}
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    text-decoration: none;
+}
+.logo span {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.1;
+    color: var(--primary-color);
+    transition: color var(--transition-normal);
+}
+.logo small {
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.logo:hover span { color: var(--primary-dark); }
+
+.site-nav {
+    flex-basis: 100%;
+}
+.nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav-list a {
+    position: relative;
+    display: block;
+    padding: var(--spacing-sm) var(--spacing-xs);
+    font-weight: 500;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: color var(--transition-normal);
+}
+/* Gạch chân chạy từ trái sang khi hover/focus */
+.nav-list a::after {
+    content: "";
+    position: absolute;
+    left: var(--spacing-md);
+    right: var(--spacing-md);
+    bottom: var(--spacing-sm);
+    height: 2px;
+    background-color: var(--primary-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--transition-normal);
+}
+.nav-list a:hover,
+.nav-list a:focus-visible { color: var(--primary-color); }
+.nav-list a:hover::after,
+.nav-list a:focus-visible::after { transform: scaleX(1); }
+
+/* Hero */
+.hero {
+    display: flex;
+    align-items: center;
+    min-height: calc(100svh - var(--header-height));
+}
+.hero-inner {
+    display: grid;
+    gap: var(--spacing-xl);
+    align-items: center;
+    padding-block: var(--spacing-xl);
+}
+.hero-title {
+    margin: 0 0 var(--spacing-md);
+    font-size: var(--fs-hero);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    color: var(--primary-color);
+}
+.hero-tagline {
+    max-width: 46ch;
+    margin: 0 0 var(--spacing-lg);
+    font-size: 1.125rem;
+}
+.hero-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+}
+.hero-media {
+    position: relative;
+    isolation: isolate;
+    margin: 0;
+}
+/* Khối màu lệch phía sau ảnh: điểm nhấn duy nhất của hero */
+.hero-media::before {
+    content: "";
+    position: absolute;
+    inset: var(--spacing-md) calc(-1 * var(--spacing-md)) calc(-1 * var(--spacing-md)) var(--spacing-md);
+    z-index: -1;
+    border-radius: var(--radius-lg);
+    background-color: var(--secondary-color);
+}
+.hero-media img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+
+/* About */
+.about-grid {
+    display: grid;
+    gap: var(--spacing-lg);
+    align-items: center;
+}
+.about-media { margin: 0; }
+.about-media img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+}
+.about-content p { margin: 0 0 var(--spacing-lg); }
+.highlights {
+    display: grid;
+    gap: var(--spacing-md);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.highlight {
+    padding-left: var(--spacing-md);
+    border-left: 4px solid var(--secondary-color);
+}
+.highlight h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    color: var(--primary-color);
+}
+.highlight p { margin: 0; }
+
+/* Menu */
+.menu-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 260px), 1fr));
+    gap: var(--spacing-lg);
+}
+.menu-item { display: flex; }
+.menu-item .card { flex: 1; }
+
+/* Gallery */
+.gallery { background-color: var(--surface-color); }
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--spacing-md);
+}
+.gallery-item {
+    position: relative;
+    margin: 0;
+    overflow: hidden;
+    border-radius: var(--radius-md);
+}
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+}
+.gallery-item figcaption {
+    position: absolute;
+    inset: auto 0 0 0;
+    padding: var(--spacing-sm) var(--spacing-md);
+    font-weight: 500;
+    color: var(--surface-color);
+    background-color: color-mix(in srgb, var(--text-color) 75%, transparent);
+    transition: translate var(--transition-normal);
+}
+.gallery-item:hover img { transform: scale(1.06); }
+/* Thiết bị có chuột: chú thích trượt lên khi hover. Màn hình cảm ứng: luôn hiện. */
+@media (hover: hover) {
+    .gallery-item figcaption { translate: 0 100%; }
+    .gallery-item:hover figcaption { translate: 0 0; }
+}
+
+/* Reviews */
+.reviews { background-color: var(--secondary-color); }
+.reviews .section-title { color: var(--text-color); }   /* primary trên secondary chỉ ~3.2:1 */
+.reviews-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: var(--spacing-lg);
+}
+.review {
+    display: flex;
+    flex-direction: column;
+    padding: var(--spacing-lg);
+    background-color: var(--surface-color);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+}
+.review blockquote {
+    flex: 1;
+    margin: 0;
+}
+.review blockquote::before {
+    content: "\201C";
+    content: "\201C" / "";          /* trang trí: không cho trình đọc màn hình đọc */
+    display: block;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--primary-color);
+}
+.review blockquote p { margin: 0; }
+.review-author {
+    margin-top: var(--spacing-md);
+    font-size: 0.9rem;
+    color: var(--muted-color);
+}
+.review-author strong { color: var(--text-color); }
+
+/* Contact */
+.contact-grid {
+    display: grid;
+    gap: var(--spacing-lg);
+}
+.contact address { font-style: normal; }
+.contact address p { margin: 0 0 var(--spacing-sm); }
+.contact h3 {
+    margin: var(--spacing-lg) 0 var(--spacing-sm);
+    font-size: 1.1rem;
+}
+.contact-info a:not(.btn) {
+    color: var(--primary-color);
+    text-underline-offset: 3px;
+    transition: color var(--transition-normal);
+}
+.contact-info a:not(.btn):hover,
+.contact-info a:not(.btn):focus-visible { color: var(--primary-dark); }
+.hours {
+    margin: 0 0 var(--spacing-lg);
+    padding: 0;
+    list-style: none;
+}
+.hours li {
+    display: flex;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+    padding: var(--spacing-sm) 0;
+    border-bottom: 1px solid var(--secondary-color);
+}
+.contact-map {
+    display: grid;
+    place-items: center;
+    min-height: 320px;
+    border-radius: var(--radius-lg);
+    background-color: var(--secondary-color);
+    font-weight: 600;
+}
+
+/* Footer: nền tối để link hover màu secondary vẫn đạt tương phản (~6:1) */
+.site-footer {
+    padding-top: var(--spacing-xl);
+    color: color-mix(in srgb, var(--background-color) 85%, transparent);
+    background-color: var(--text-color);
+}
+.footer-grid {
+    display: grid;
+    gap: var(--spacing-lg);
+}
+.footer-title {
+    margin: 0 0 var(--spacing-md);
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--surface-color);
+}
+.site-footer p { margin: 0; }
+.site-footer ul {
+    display: grid;
+    gap: var(--spacing-sm);
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.site-footer a {
+    color: inherit;
+    text-underline-offset: 3px;
+    transition: color var(--transition-normal);
+}
+.site-footer a:hover,
+.site-footer a:focus-visible { color: var(--secondary-color); }
+.site-footer a:focus-visible { outline-color: var(--secondary-color); }
+.copyright {
+    margin-top: var(--spacing-xl);
+    padding: var(--spacing-md);
+    text-align: center;
+    font-size: 0.875rem;
+    border-top: 1px solid color-mix(in srgb, var(--background-color) 20%, transparent);
+}
+
+/* 6. RESPONSIVE (mobile-first: chỉ cần 2 breakpoint) ------- */
+@media (min-width: 768px) {
+    .about-grid { grid-template-columns: 1fr 1fr; gap: var(--spacing-xl); }
+    .contact-grid { grid-template-columns: 1fr 1fr; }
+    .footer-grid { grid-template-columns: 2fr 1fr 1fr; }
+
+    /* Bố cục 4 cột: ảnh 1 chiếm 2x2, ảnh 4 chiếm 2 cột ở hàng dưới → không để ô trống.
+       Chiều cao hàng đặt tường minh để ảnh trải kín ô bất kể tỉ lệ. */
+    .gallery-grid {
+        grid-template-columns: repeat(4, 1fr);
+        grid-auto-rows: clamp(160px, 22vw, 260px);
+    }
+    .gallery-item img { aspect-ratio: auto; }
+    .gallery-item:first-child { grid-column: span 2; grid-row: span 2; }
+    .gallery-item:nth-child(4) { grid-column: span 2; }
+}
+
+@media (min-width: 992px) {
+    .header-inner { flex-wrap: nowrap; justify-content: space-between; }
+    .site-nav { flex-basis: auto; }
+    .nav-list { flex-wrap: nowrap; }
+    .nav-list a { padding: var(--spacing-sm) var(--spacing-md); }
+    .nav-list a::after { bottom: 0; }
+
+    .hero-inner { grid-template-columns: 1.1fr 0.9fr; }
+}
+
+/* 7. GIẢM CHUYỂN ĐỘNG ------------------------------------- */
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
