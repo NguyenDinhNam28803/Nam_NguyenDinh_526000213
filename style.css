@@ -1,0 +1,21 @@
+:root {
+    --primary-color: #6F4E37;
+    --secondary-color: #C8A27A;
+    --background-color: #FAF7F2;
+    --surface-color: #FFFFFF;
+    --text-color: #292522;
+    --muted-color: #77716B;
+
+    --font-family: "Poppins", sans-serif;
+
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 32px;
+    --spacing-xl: 64px;
+
+    --radius-md: 12px;
+    --radius-lg: 20px;
+
+    --transition-normal: 0.3s ease;
+}
